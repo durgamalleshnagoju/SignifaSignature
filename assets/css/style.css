@@ -1,0 +1,350 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&amp;family=Oswald:wght@300&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Segoe UI&amp;display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+/* ==========================  tool bar start============================ */
+.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	/* padding: 50px; */
+	font-size: 20px;
+}
+.nav-container{
+	height: 100px;
+
+	/* background-color: aqua; */
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	
+	
+}
+nav.sticky{
+	position:fixed;
+	top: 0;
+}
+.nav-container .menu-logo img{
+	padding:10px 0px 6px 6px;
+
+	height: 45%;
+	width: 45%;
+}
+.nav-container a{
+	
+	padding:10px;
+	font-size: 15px;
+}
+
+.nav-container ul{
+
+    display: flex;
+	justify-content: left;
+	list-style: none;
+
+	
+}
+nav ul li a{
+	font-size: 15px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: 550;
+	color: black;
+	text-transform: uppercase;
+}
+nav .fa-solid{
+
+	margin-left:10px;
+	
+}
+.nav-container .button-section{
+	margin-right: 20px;
+	display: flex;
+	gap: 20px;
+}
+.nav-container .button{
+	
+	background-color: #d1864f;
+	padding:15px;
+    
+}
+.nav-container .button a{
+	/* padding: 50px; */
+	font-size: 20px;
+	font-weight: 550;
+	font-family: sans-serif;
+	color:black;
+}
+.tool-container{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #d1864f;
+	
+}
+.tool-container .contact ul li{
+	padding-right: 10px;
+}
+
+.contact{
+	padding-left: 120px;
+	
+	
+}
+.contact ul{
+	list-style: outside none none;
+	
+}
+.info{
+	padding-right: 120px;
+	background-color: #d1864f;
+	
+}
+
+.tool-container .info div{
+	display: flex;
+	flex-direction: row;
+	background-color: #d1864f;
+}
+.tool-container .info ul {
+	
+	list-style: outside none none;
+	
+	justify-content: left;
+	
+	
+}
+.tool-container ul{
+	
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	align-content: center;
+	gap: 20px;
+}
+.tool-container ul i{
+	cursor: pointer;
+	margin-right: 5px;
+}
+.tool-container ul a{
+	color: #fff;
+}
+.tool-container p{
+	margin-left: -15px;
+	font-size: 18px;
+	font-weight: 550;
+	color: #fff;
+}
+
+.fa-bars{
+	display: none;
+}
+.fa-xmark{
+	display: none;
+}
+.tool-container{
+	justify-content: space-between;
+	align-items: center;
+	
+}
+/* ========================== tool bar end============================ */
+
+/* ========================== responsive for stick nav and tool bar start============================ */
+@media only screen and (max-width: 1050px){
+	
+	.contact {
+		padding-left: 60px;
+	}
+	.info {
+		padding-right: 10px;
+		
+	}
+	.info .fa-bars{
+		display: none;
+	}
+	.info .fa-xmark{
+		display: none;
+	}
+	.tool-container{
+		padding:6px;
+	}
+	.nav-container ul a{
+		padding: 5px;
+		font-size: 15px;
+		font-weight: 550;
+	}
+	.nav-container ul li{
+		padding-right: 15px;
+	}
+	
+	.nav-container{
+		height: 80px;
+	}
+	.nav-container .menu-logo img{
+		
+		height: 35%;
+		width: 35%;
+	}
+	.nav-container .button{
+		padding: 10px;
+	}
+	.nav-container .button a{
+		font-size: 15px;
+	}
+
+}
+@media only screen and (max-width: 900px){
+
+	
+	.tool-container{
+		display: none;
+	}
+	.nav-container ul{
+		margin-left: 90px;
+	}
+	.nav-container ul a{
+		
+		font-size: 13px;
+		font-weight: 550;
+	}
+	.nav-container ul li{
+		padding-right: 10px;
+	}
+	
+	.nav-container{
+		height: 80px;
+	}
+	.nav-container .menu-logo img
+	{
+		position: absolute;
+		top: 6px;
+		left: 10px;
+		height: 50px;
+		width: auto;
+	}
+	.nav-container .button{
+		padding: 10px;
+	}
+	.nav-container .button a{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 600px){
+
+	.fa-bars{
+		display: block;
+	}
+	.fa-xmark{
+		display: block;
+	}
+	.fa-bars{
+		cursor: pointer;
+		display: flex;
+		justify-content: end;
+		
+	}
+
+	/* .nav-container ul{
+		display: none;
+	} */
+	.nav-container .button{
+		display: none;
+	}
+	.nav-container{
+		height: 50px;
+		display: flex;
+		justify-content: end;
+		
+	}
+	.nav-container .menu-logo img{
+		position : absolute;
+		top: 0;
+		left: 1px;
+		
+		height: 40px;
+		width: auto;
+		
+	}
+	.nav-container .nav-div{
+		width: 50%;
+	}
+	.nav-container .menu-icon{
+		width: 50%;
+	}
+	.nav-container .button{
+		padding: 10px;
+	}
+	.nav-container .button a{
+		font-size: 15px;
+	}
+	.menu-icon{
+		justify-content: right;
+		align-items: end;
+	}
+	nav ul{
+		background: blueviolet;
+		position:fixed;
+		top: 0;
+		right: -200px;
+		width:200px;
+		height: 100vh;
+		padding-top: 50px;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		transition: right 0.5s;
+		cursor: pointer;
+		/* align-items: center; */
+		/* justify-content: center; */
+	}
+	nav ul li{
+		
+		padding: 25px 25px 25px 35px;
+		/* margin-top: 10px; */
+	}
+	nav ul .fa-solid{
+		position: absolute;
+		top: 20px;
+		right: 25px;
+		cursor: pointer;
+
+	}
+	nav ul li a{
+		color: aqua;
+		font-size: 15px;
+	}
+
+}
+/* ========================== responsive for stick nav and tool bar end============================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
