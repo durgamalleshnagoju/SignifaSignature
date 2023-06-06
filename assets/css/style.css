@@ -6,6 +6,8 @@
     padding: 0px;
     margin: 0px;
     border: 0px;
+	box-sizing: border-box;
+	
 }
 
 
@@ -21,6 +23,7 @@ html{
 	top: 0;
 	/* padding: 50px; */
 	font-size: 20px;
+	background: #fff;
 }
 .nav-container{
 	height: 100px;
@@ -90,7 +93,9 @@ nav .fa-solid{
 	color:black;
 }
 .tool-container{
-	padding: 10px;
+	/* width: 100vw; */
+	height: 5vh;
+	padding: 5px;
 	display: flex;
 	justify-content: space-between;
 	background-color: #d1864f;
@@ -163,6 +168,184 @@ nav .fa-solid{
 }
 /* ========================== tool bar end============================ */
 
+/* ========================== banner ============================ */
+
+.banner{
+	background: #d1864f;
+
+}
+.banner img{
+	height: 100%;
+	width: 100%;
+}
+
+/* ========================== special section ============================ */
+.special-section{
+	/* height: 10vh; */
+	display: flex;
+	background: #d1864f;
+	justify-content: space-between;
+	
+	
+}
+.special-section div{
+	
+	align-items: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px 30px;
+}
+.special-section h3{
+	font-family: stereonic;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 550;
+}
+.special-section p{
+	color: black;
+	font-size: 15px;
+	font-weight: 550;
+}
+.special-section .special-div div{
+	background-color: #544531;
+}
+.special-section .specia-div h3{
+	color: black;
+}
+
+/* =================== About section =================== */
+
+.about-section{
+	padding: 20px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: auto auto;
+}
+.about-section div{
+	
+	justify-content: center;	
+	
+}
+.about-section img{
+	/* border-radius: 20%; */
+	/* padding: 40px; */
+	width: 49vw;
+	height: 75vh;
+}
+.about-section .block2 div{
+	display: flex;
+	padding: 20px;
+
+}
+.about-section .block2 img{
+	width: 25vw;
+	height: 60vh;
+}
+.about-section .block4{
+	background: #f3f3f3;
+	
+}
+.about-section .block4 .logo-img{
+	display: flex;
+	
+}
+.about-section .block4 .logo-img img{
+	width: 100px;
+	height: 50px;
+	margin: 25px;
+}
+.about-section .block4 .heading{
+	display: flex;
+	/* color: black; */
+	font-size: 20px;
+	padding: 10px;
+
+}
+.about-section .block4 .heading h3{
+	color: black;
+}
+.about-section .block4 .para{
+	display: flex;
+	font-size: 20px;
+	padding: 20px 100px;
+	font-weight: 500;
+}
+.about-section .block4 .button{
+	display: flex;
+	padding: 20px;
+}
+.about-section .block4 .button a{
+	text-decoration: none;
+	background: #d1864f;
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 20px;
+	
+}
+.about-section .row1{
+	padding: 30px;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto auto;
+}
+.about-section .row1 div{
+	width: 200px;
+	height: 150px;
+}
+.about-section h1{
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+.about-section h3{
+	color: #d1864f;
+	font-size: 25px;
+	font-weight: 550;
+}
+.about-section .row1 div{
+	padding: 10px;
+}
+.about-section .block4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.about-section .block5{
+	background: #f3f3f3;
+}
+.about-section .block5 .header {
+	padding: 20px 10px;
+	display: flex;
+	gap: 10px;
+}
+.about-section .block5 .header h3{
+	color: black;
+	font-weight: 600;
+}
+.about-section .block5 img{
+	width: 100px;
+	height: 50px;
+}
+.about-section .block5 .feutures img{
+	width: 40px;
+	height: 30px;
+}
+.about-section .feutures{
+	display: grid;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-template-columns: auto auto;
+	justify-content: space-around;
+}
+
+.about-section .block5 .feutures .element{
+	display: flex;
+	gap: 10px;
+	width: 200px;
+	height: 50px;
+	justify-content: left;
+}
 /* ========================== responsive for stick nav and tool bar start============================ */
 @media only screen and (max-width: 1050px){
 	
