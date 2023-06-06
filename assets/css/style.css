@@ -316,11 +316,14 @@ nav .fa-solid{
 	background: #f3f3f3;
 }
 .about-section .block5 .header {
-	padding: 20px 10px;
+	padding: 20px ;
 	display: flex;
-	gap: 10px;
+	gap: 40px;
+	justify-content: center;
+
 }
 .about-section .block5 .header h3{
+	font-size: 30px;
 	color: black;
 	font-weight: 600;
 }
@@ -329,22 +332,42 @@ nav .fa-solid{
 	height: 50px;
 }
 .about-section .block5 .feutures img{
-	width: 40px;
-	height: 30px;
+	width: 30px;
+	height: 25px;
+	margin: 5px;
 }
 .about-section .feutures{
 	display: grid;
 	grid-template-rows: auto auto auto auto auto auto;
 	grid-template-columns: auto auto;
-	justify-content: space-around;
+	justify-content: center;
+	column-gap: 120px;
+	
+
 }
 
 .about-section .block5 .feutures .element{
 	display: flex;
-	gap: 10px;
-	width: 200px;
+	gap: 20px;
+	width: 180px;
 	height: 50px;
 	justify-content: left;
+	margin-bottom: 15px;
+	font-size: 15px;
+
+}
+.about-section .block5 .button{
+	justify-content: center;
+	display: flex;
+	padding: 20px;
+}
+.about-section .block5 button a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #fff;
+	background: #d1864f;
+	padding: 10px 40px;
+	
 }
 /* ========================== responsive for stick nav and tool bar start============================ */
 @media only screen and (max-width: 1050px){
