@@ -510,14 +510,26 @@ label:last-child i.fa{color: magenta;}
 /* =========================== specifications ============================= */
 .specifications{
 	padding: 100px;
-}
-.specifications .tabs{
-	justify-content: center;
 	display: flex;
-	align-items: center;
-	/* flex-direction: column; */
+	justify-content: center;
+	background: #ececea;
+	
+}
+.new-div{
+	display: flex;
+	justify-content: center;
+}
+
+.specifications .tabs{
+	display:flex;
+	position: relative;
+    /* transform: translate(-50%, -50%); */
+    background: transparent;
+    overflow: hidden;
+    /* box-shadow: 0 0 15px 0 #031006; */
 }
 .specifications .tabs .tab-content img{
+	margin-top: 30px;
 	width: 120px;
 	height:150px;
 }
@@ -526,25 +538,75 @@ label:last-child i.fa{color: magenta;}
 	height: 100%;
 	overflow: hidden;
 }
-.tab-content > div {
-	position: absolute;
-	text-align: center;
-	/* height: 100vh; */
-	padding: 30px 20px;
-	/* background-color: #9cc6db; */
-	/* top: -200%; */
-	transition: all 500ms ease-in-out;
-  }
+.tab-content > div{
+ 
+    position: absolute;
+    text-align: center;
+    /* height: 100vh; */
+    padding: 30px 20px;
+    background:transparent;
+    top: -200%;
+    transition: all 500ms ease-in-out;
+}
+.tab-content > div.active{
+    top: 0;
+}
+.tabs .tab-header > div{
+	display: flex;
+	align-items: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 550;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.tabs .tab-header1 > div{
+	display: flex;
+	align-items: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 550;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.tabs .tab-header > div:hover,
+.tabs .tab-header > div:active{    
+    color: #d1864f;
+}
+.tabs .tab-header1 > div:hover,
+.tabs .tab-header1 > div:active{    
+    color: #d1864f;
+}
+/* .content{
+    color: black;
+    background-color:#fff;
+} */
+.tab-content{
+	position: relative;
+    height: 100%;
+}
+
 .specifications .tabs .tab-content{
 	
 	padding: 50px;
 	width: 25vw;
-	height: 60vh;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(180deg, #e6e6ad 50%,#f48534 90%);
+	background: linear-gradient(180deg,#f6f2eb 10%, #f0e1d7 50%,#d1864f 90%);
+}
+.tab-indicator{
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    background: #d1864f;
+    left: 0px;
+    top: 30px;
+    transition: all 500ms ease-in-out;
 }
 #left{
 	border-left: black solid 1px;
@@ -556,8 +618,35 @@ label:last-child i.fa{color: magenta;}
 	
 	padding: 0px 20px;
 }
+.specifications .tab-header1{
+	
+	padding: 0px 20px;
+}
 .specifications .tab-header div{
 	padding: 20px;
+}
+.specifications .tab-header1 div{
+	padding: 20px;
+}
+.tab-content h3{
+	color: #d1864f;
+	padding: 10px;
+	background: #fff;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	width: fit-content;
+	padding-right: 50px;
+	
+}
+.tab-content p{
+	padding: 40px;
+}
+.tab-content img{
+	margin-top: 50px;
+}
+.content section{
+	display: flex;
+	justify-content: center;
 }
 
 /* ========================== responsive for stick nav and tool bar start============================ */
