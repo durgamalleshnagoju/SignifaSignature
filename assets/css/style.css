@@ -33,13 +33,12 @@ div,p,a,span,button,li{
 	font-size: 20px;
 	background: #fff;
 	z-index:2;
-	
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.25);
 	
 }
 .nav-container{
 	height: 100px;
 	margin: 0px 100px;
-	/* background-color: aqua; */
 	display: flex;
 	align-items:center;
 	justify-content: space-between;
@@ -51,7 +50,6 @@ nav.sticky{
 	top: 0;
 }
 .nav-container .menu-logo img{
-	/* padding:10px 0px 6px 6px; */
 	padding-top: 10px;
 	height: 70%;
 	width: 70%;
@@ -95,8 +93,7 @@ nav .fa-solid{
 	color:black;
 }
 .tool-container{
-	/* width: 100vw; */
-	height: 5vh;
+	height: 6vh;
 	padding: 5px;
 	display: flex;
 	justify-content: space-between;
@@ -146,13 +143,15 @@ nav .fa-solid{
 .tool-container ul i{
 	cursor: pointer;
 	margin-right: 5px;
+	font-size: 18px;
 }
 .tool-container ul a{
 	color: #fff;
+	font-size: 15px;
 }
 .tool-container p{
 	margin-left: -15px;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 550;
 	color: #fff;
 }
@@ -173,7 +172,10 @@ nav .fa-solid{
 /* ========================== banner ============================ */
 
 .banner{
-	background: #d1864f;
+	/* background: #d1864f; */
+	width: 100%;
+	height: 100%;
+	display: flex;
 
 }
 .banner img{
@@ -184,6 +186,7 @@ nav .fa-solid{
 /* ========================== special section ============================ */
 .special-section{
 	/* height: 10vh; */
+	width: 100%;
 	display: flex;
 	background: #d1864f;
 	justify-content: space-between;
@@ -194,23 +197,24 @@ nav .fa-solid{
 	width: 100vw;
 	display: flex;
 	justify-content: space-evenly;
-	padding: 0px 100px;
+	padding: 20px;
+	margin: 0px 100px;
 }
 .special-section div{
 	
 	align-items: center;
-	margin-left: 20px;
+	/* margin-left: 20px;
 	margin-right: 20px;
-	padding: 20px 30px;
+	padding: 20px 30px; */
 }
 .special-section h3{
 	color: #fff;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 550;
 }
 .special-section p{
-	color: black;
-	font-size: 15px;
+	color: #fff;
+	font-size: 13px;
 	font-weight: 550;
 }
 .special-section .special-div div{
@@ -223,21 +227,29 @@ nav .fa-solid{
 /* =================== About section =================== */
 
 .about-section{
-	padding: 20px;
+	padding: 0px;
+	padding-top: 100px;
 	display: grid;
 	grid-template-rows: auto auto auto;
-	grid-template-columns: auto auto;
+	grid-template-columns: 50% 50%;
+	justify-content: center;
 }
 .about-section div{
 	
 	justify-content: center;	
-	
+
+}
+.about-section .block3,
+.about-section .block4,
+.about-section .block5,
+.about-section .block6
+{
+	width: 100%;
+	height: auto;
 }
 .about-section img{
-	/* border-radius: 20%; */
-	/* padding: 40px; */
-	width: 49vw;
-	height: 75vh;
+	width: 100%;
+	height: 100%;
 }
 .about-section .block2 div{
 	display: flex;
@@ -380,7 +392,9 @@ nav .fa-solid{
 }
 /* ============================= amenities start =============================== */
 .amenities{
-	padding: 10px 200px;
+	
+	padding: 0px 100px;
+	padding-top: 100px;
 } 
 .amenities .heading{
     display: flex;
@@ -389,11 +403,17 @@ nav .fa-solid{
     padding: 20px;
 }
 .amenities .para{
+	font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+	font-weight: 500;
 
+}
+.amenities span{
+	font-size: 12px;
+	font-weight: 500;
 }
 .amenities .images{
     padding: 10px 0px;
@@ -443,6 +463,7 @@ nav .fa-solid{
     width: 100%;
     height: 400px;
     position: relative;
+	
 }
 .amenities main div{
     position: absolute;
@@ -451,6 +472,7 @@ nav .fa-solid{
     width: 100%;
     height: 99%;
     display: none;
+	padding-top: 50px;
    
 }
 .amenities fieldset{
@@ -467,10 +489,18 @@ nav .fa-solid{
     font-size: 25px;
 }
 .amenities fieldset ul{
-    list-style:circle;
-    
+    list-style:none;
+    margin-left: 15px;
 }
-
+.amenities fieldset ul li p::before{
+	
+	content: "\00BB";
+	margin-right: 10px;
+}
+.amenities main p{
+	font-size: 15px;
+	font-weight:lighter;
+}
 .amenities main div figure{
     width: 40%;
     float: left;
@@ -516,7 +546,8 @@ label:last-child i.fa{color: magenta;}
 }
   /* ===========================Project amenities  =========================== */
   .project-amenities{
-	padding: 50px 100px;
+
+	padding: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -573,18 +604,18 @@ label:last-child i.fa{color: magenta;}
 	justify-content: center;
 	align-items: center;
 	background: #ececea;
+	padding: 100px;
 }
 .specifications-div .heading{
 	padding: 30px;
 }
 .specifications{
-	padding: 100px;
+	padding: 50px;
+	padding-bottom: 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	
-	
 }
 .new-div{
 	display: flex;
@@ -740,6 +771,7 @@ label:last-child i.fa{color: magenta;}
 	justify-content: center;
 	align-items: center;
 	padding: 100px;
+	padding-bottom: 0px;
  }
  .why-signifa .header{
 	display: flex;
@@ -755,7 +787,7 @@ label:last-child i.fa{color: magenta;}
 	width: 800px;
  }
  .why-signifa .cards{
-	padding: 100px;
+	padding: 50px;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto;
@@ -781,6 +813,7 @@ label:last-child i.fa{color: magenta;}
 	
 	justify-content: left;
 	align-items: start;
+	margin-left: 10px;
 }
 .why-signifa .card-content .card-header{
 	
@@ -791,8 +824,9 @@ label:last-child i.fa{color: magenta;}
 	margin-left: 20px;
 	padding: 10px 0px;
 }
+
 /* ================================== Accordion =============================== */
-.faqs{
+/* .faqs{
 
 	display: flex;
 	flex-direction: column;
@@ -828,22 +862,11 @@ label:last-child i.fa{color: magenta;}
 .accordion .accordion-content{
     margin: 10px 0;
     border-radius: 4px;
-    /* background: #FFF7F0; */
+   
     border: 1px solid #d1864f;
     overflow: hidden;
 }
-/* .accordion-content:nth-child(2){
-    background-color: #F0FAFF;
-    border-color: #CCEEFF;
-}
-.accordion-content:nth-child(3){
-    background-color: #FFF0F3;
-    border-color: #FFCCD6;
-}
-.accordion-content:nth-child(4){
-    background-color: #F0F0FF;
-    border-color: #CCCCFF;
-} */
+
 .accordion-content.open{
     padding-bottom: 10px;
 }
@@ -875,15 +898,13 @@ label:last-child i.fa{color: magenta;}
     font-weight: 400;
     padding: 0 15px;
     transition: all 0.2s linear;
-}
+} */
 
 /* ================================contact form ================================================== */
 .contact-form{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* min-height: 100vh; */
-    /* background: #095a55; */
 	padding: 100px;
 }
 .contactform::before{
@@ -901,7 +922,6 @@ label:last-child i.fa{color: magenta;}
     min-height: 550px;
     display: flex;
     z-index: 1;
-    /* background: #fff; */
 }
 
 .container .contactInfo{
@@ -1044,70 +1064,6 @@ label:last-child i.fa{color: magenta;}
     background: #f0e1d7;
 	color: #d1864f;
 }
-/*now, make it reponsive*/
-@media (max-width:1200px){
-    .container{
-        width: 90%;
-        min-width: auto;
-        /* margin: 20px;
-        box-shadow: 0 20px 50px rgba(0,0,0,.2); */
-    }
-   .container .contactInfo{
-        top: 0;
-        height: 550px;
-        position: relative;
-        box-shadow: none;
-    }
-    .container .contactForm{
-        position: relative;
-        width: calc(100% - 350px);
-        padding-left: 0;
-        margin-left: 0;
-        padding: 40px;
-        height: 550px;
-        box-shadow: none;
-    } 
-}
-@media (max-width:991px){
-    .contactform{
-        background: #fff38e;
-    }
-    .contactform::before{
-        display: none;
-    }
-    .container{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .container .contactForm{
-        width: 100%;
-        height: auto;
-    }
-    .container .contactInfo{
-        width: 100%;
-        height: auto;
-        flex-direction: row;
-    }
-    .container .contactInfo ul.sci{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-@media (max-width:600px){
-    .container .contactForm{
-        padding: 25px;
-    }
-    .container .contactInfo{
-        padding: 25px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .container.contactInfo ul.sci{
-        margin-top: 40px;
-    }
-}
 
 /* =============================== footer section ============================================= */
 
@@ -1117,7 +1073,7 @@ footer{
     bottom: 0;
     background: linear-gradient(to right,#00093c,#2d0b00);
     color: #fff;
-    padding: 100px 0 30px;
+    padding: 40px 0 20px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
@@ -1238,188 +1194,6 @@ footer .underline span{
         left: 100%;
     }
 }
-
-
-@media (max-width:700px){
-    footer{
-        bottom:unset;
-    }
-    footer .col{
-        flex-basis: 100%;
-        
-    }
-    footer .col:nth-child(2),.col:nth-child(3){
-        flex-basis: 100%;
-    }
-}
-
-/* ========================== responsive for stick nav and tool bar start============================ */
-@media only screen and (max-width: 1050px){
-	
-	.contact {
-		padding-left: 60px;
-	}
-	.tool-container .info {
-		padding-right: 10px;
-		
-	}
-	.tool-container .info .fa-bars{
-		display: none;
-	}
-	.tool-container .info .fa-xmark{
-		display: none;
-	}
-	.tool-container{
-		padding:6px;
-	}
-	.nav-container ul a{
-		padding: 5px;
-		font-size: 15px;
-		font-weight: 550;
-	}
-	.nav-container ul li{
-		padding-right: 15px;
-	}
-	
-	.nav-container{
-		height: 80px;
-	}
-	.nav-container .menu-logo img{
-		
-		height: 35%;
-		width: 35%;
-	}
-	.nav-container .button{
-		padding: 10px;
-	}
-	.nav-container .button a{
-		font-size: 15px;
-	}
-
-}
-@media only screen and (max-width: 900px){
-
-	
-	.tool-container{
-		display: none;
-	}
-	.nav-container ul{
-		margin-left: 90px;
-	}
-	.nav-container ul a{
-		
-		font-size: 13px;
-		font-weight: 550;
-	}
-	.nav-container ul li{
-		padding-right: 10px;
-	}
-	
-	.nav-container{
-		height: 80px;
-	}
-	.nav-container .menu-logo img
-	{
-		position: absolute;
-		top: 6px;
-		left: 10px;
-		height: 50px;
-		width: auto;
-	}
-	.nav-container .button{
-		padding: 10px;
-	}
-	.nav-container .button a{
-		font-size: 15px;
-	}
-}
-@media only screen and (max-width: 600px){
-
-	.fa-bars{
-		display: block;
-	}
-	.fa-xmark{
-		display: block;
-	}
-	.fa-bars{
-		cursor: pointer;
-		display: flex;
-		justify-content: end;
-		
-	}
-
-	/* .nav-container ul{
-		display: none;
-	} */
-	.nav-container .button{
-		display: none;
-	}
-	.nav-container{
-		height: 50px;
-		display: flex;
-		justify-content: end;
-		
-	}
-	.nav-container .menu-logo img{
-		position : absolute;
-		top: 0;
-		left: 1px;
-		
-		height: 40px;
-		width: auto;
-		
-	}
-	.nav-container .nav-div{
-		width: 50%;
-	}
-	.nav-container .menu-icon{
-		width: 50%;
-	}
-	.nav-container .button{
-		padding: 10px;
-	}
-	.nav-container .button a{
-		font-size: 15px;
-	}
-	.menu-icon{
-		justify-content: right;
-		align-items: end;
-	}
-	nav ul{
-		background: blueviolet;
-		position:fixed;
-		top: 0;
-		right: -200px;
-		width:200px;
-		height: 100vh;
-		padding-top: 50px;
-		display: flex;
-		flex-direction: column;
-		z-index: 2;
-		transition: right 0.5s;
-		cursor: pointer;
-		/* align-items: center; */
-		/* justify-content: center; */
-	}
-	nav ul li{
-		
-		padding: 25px 25px 25px 35px;
-		/* margin-top: 10px; */
-	}
-	nav ul .fa-solid{
-		position: absolute;
-		top: 20px;
-		right: 25px;
-		cursor: pointer;
-
-	}
-	nav ul li a{
-		color: aqua;
-		font-size: 15px;
-	}
-
-}
-/* ========================== responsive for stick nav and tool bar end============================ */
 
 
 

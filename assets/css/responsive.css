@@ -1,0 +1,273 @@
+/* ========================== responsive for stick nav and tool bar start============================ */
+@media only screen and (max-width: 1050px){
+	
+	.contact {
+		padding-left: 60px;
+	}
+	.tool-container .info {
+		padding-right: 10px;
+		
+	}
+	.tool-container .info .fa-bars{
+		display: none;
+	}
+	.tool-container .info .fa-xmark{
+		display: none;
+	}
+	.tool-container{
+		padding:6px;
+	}
+	.nav-container ul a{
+		padding: 5px;
+		font-size: 15px;
+		font-weight: 550;
+	}
+	.nav-container ul li{
+		padding-right: 15px;
+	}
+	
+	.nav-container{
+		height: 80px;
+	}
+	.nav-container .menu-logo img{
+		
+		height: 35%;
+		width: 35%;
+	}
+	.nav-container .button{
+		padding: 10px;
+	}
+	.nav-container .button a{
+		font-size: 15px;
+	}
+
+}
+@media only screen and (max-width: 900px){
+
+	
+	.tool-container{
+		display: none;
+	}
+	.nav-container ul{
+		margin-left: 90px;
+	}
+	.nav-container ul a{
+		
+		font-size: 10px;
+		font-weight: 550;
+	}
+	.nav-container ul li{
+		padding-right: 10px;
+	}
+	
+	.nav-container{
+		height: 80px;
+        margin:0px 50px;
+	}
+	.nav-container .menu-logo img
+	{
+		position: absolute;
+		top: 6px;
+		left: 10px;
+		height: 50px;
+		width: auto;
+	}
+	.nav-container .button{
+		padding: 10px 20px;
+        margin-left: 15px;
+	}
+	.nav-container .button a{
+        padding: 0px;
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 600px){
+
+	.fa-bars{
+		display: block;
+	}
+	.fa-xmark{
+		display: block;
+	}
+	.fa-bars{
+		cursor: pointer;
+		display: flex;
+		justify-content: end;
+		
+	}
+
+	/* .nav-container ul{
+		display: none;
+	} */
+	.nav-container .button{
+		display: none;
+	}
+	.nav-container{
+		height: 50px;
+		display: flex;
+		justify-content: end;
+		
+	}
+	.nav-container .menu-logo img{
+		position : absolute;
+		top: 0;
+		left: 1px;
+		
+		height: 40px;
+		width: auto;
+		
+	}
+	.nav-container .nav-div{
+		width: 50%;
+	}
+	.nav-container .menu-icon{
+		width: 50%;
+	}
+	.nav-container .button{
+		padding: 10px;
+	}
+	.nav-container .button a{
+		font-size: 15px;
+	}
+	.menu-icon{
+		justify-content: right;
+		align-items: end;
+	}
+	nav ul{
+		background: blueviolet;
+		position:fixed;
+		top: 0;
+		right: -200px;
+		width:200px;
+		height: 100vh;
+		padding-top: 50px;
+		display: flex;
+		flex-direction: column;
+		z-index: 2;
+		transition: right 0.5s;
+		cursor: pointer;
+		/* align-items: center; */
+		/* justify-content: center; */
+	}
+	nav ul li{
+		
+		padding: 25px 25px 25px 35px;
+		/* margin-top: 10px; */
+	}
+	nav ul .fa-solid{
+		position: absolute;
+		top: 20px;
+		right: 25px;
+		cursor: pointer;
+
+	}
+	nav ul li a{
+		color: aqua;
+		font-size: 15px;
+	}
+
+}
+/* ========================== responsive for stick nav and tool bar end============================ */
+
+
+/* ----------------------------------- why-signifa ----------------------------------- */
+
+@media only screen and (min-width:600px) and (max-width:900px){
+    .why-signifa .card-content li{
+	    font-size: 10px;
+    }
+    .why-signifa .card-content h3{
+	    font-size: 15px;
+    }
+    .why-signifa .card{
+        width: 250px;
+    }
+    .why-signifa .card-content{
+        margin-left: 0px;
+    }
+    .why-signifa .cards{
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+}
+
+/* ----------------------------------- contact form ----------------------------------- */
+/*now, make it reponsive*/
+@media (max-width:1200px){
+    .container{
+        width: 90%;
+        min-width: auto;
+        /* margin: 20px;
+        box-shadow: 0 20px 50px rgba(0,0,0,.2); */
+    }
+   .container .contactInfo{
+        top: 0;
+        height: 550px;
+        position: relative;
+        box-shadow: none;
+    }
+    .container .contactForm{
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    } 
+}
+@media (max-width:991px){
+    .contactform{
+        background: #fff38e;
+    }
+    .contactform::before{
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container .contactForm{
+        width: 100%;
+        height: auto;
+    }
+    .container .contactInfo{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+    .container .contactInfo ul.sci{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:600px){
+    .container .contactForm{
+        padding: 25px;
+    }
+    .container .contactInfo{
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container.contactInfo ul.sci{
+        margin-top: 40px;
+    }
+}
+
+/* ----------------------------------- footer ----------------------------------- */
+
+@media (max-width:700px){
+    footer{
+        bottom:unset;
+    }
+    footer .col{
+        flex-basis: 100%;
+        
+    }
+    footer .col:nth-child(2),.col:nth-child(3){
+        flex-basis: 100%;
+    }
+}
