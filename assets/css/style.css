@@ -200,6 +200,12 @@ nav .fa-solid{
 	padding: 20px;
 	margin: 0px 100px;
 }
+.special-section .main-div div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .special-section div{
 	
 	align-items: center;
@@ -286,13 +292,13 @@ nav .fa-solid{
 .about-section .block4 .para{
 	display: flex;
 	/* font-size: 20px; */
-	padding: 20px 100px;
+	padding: 20px 120px;
 	/* font-weight: 500; */
 	line-height: 30px;
 }
 .about-section .block4 .button{
 	display: flex;
-	padding: 20px;
+	padding: 30px;
 }
 .about-section .block4 .button a{
 	text-decoration: none;
@@ -309,8 +315,13 @@ nav .fa-solid{
 	grid-template-columns: auto auto auto;
 }
 .about-section .row1 div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	width: 200px;
 	height: 150px;
+	text-align: center;
 }
 .about-section h1{
 	display: flex;
@@ -320,7 +331,7 @@ nav .fa-solid{
 }
 .about-section h3{
 	color: #d1864f;
-	font-size: 25px;
+	font-size: 28px;
 	font-weight: 550;
 }
 .about-section .row1 div{
@@ -331,6 +342,7 @@ nav .fa-solid{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	padding: 75px 0px;
 }
 .about-section .block5{
 	background: #f3f3f3;
@@ -703,7 +715,7 @@ label:last-child i.fa{color: magenta;}
 .specifications .tabs .tab-content{
 	
 	padding: 50px;
-	width: 25vw;
+	width: 40vw;
 
 	display: flex;
 	flex-direction: column;
@@ -755,6 +767,7 @@ label:last-child i.fa{color: magenta;}
 }
 .tab-content p{
 	padding: 40px;
+	font-size: 12px;
 }
 .tab-content img{
 	margin-top: 50px;
