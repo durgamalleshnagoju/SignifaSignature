@@ -1085,7 +1085,9 @@ label:last-child i.fa{color: magenta;}
 	color: #d1864f;
 }
 /* ================================contact form for mobile ================================================== */
-
+.contact2{
+	display: none;
+}
 
 .contactUs{
 	background: linear-gradient(90deg, #0e3953 0%, #0e3953 30%,#03a9f5 30%, #03a9f5 100%);
@@ -1103,11 +1105,11 @@ label:last-child i.fa{color: magenta;}
     color: white;
     font-weight: 500;
 }
-.form
+.contact1 .form
 {
     grid-area: form;
 }
-.info
+.contact1 .info
 {
     grid-area: info;
 }
@@ -1122,7 +1124,7 @@ label:last-child i.fa{color: magenta;}
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
     margin-top: 20px;
 }
-.box
+.contact1 .box
 {
     position: relative;
     display: grid;
@@ -1139,34 +1141,34 @@ label:last-child i.fa{color: magenta;}
     margin-bottom: 10px;
 }
 /* Form box */
-.formBox
+.contact1 .formBox
 {
     position: relative;
     width: 100%;
 }
-.formBox .row50{
+.contact1 .formBox .row50{
     display: flex;
     gap: 20px;
 }
-.inputBox
+.contact1 .inputBox
 {
     display: flex;
     flex-direction: column;
     margin: 10px;
     width: 50%;
 }
-.formBox .row100 .inputBox
+.contact1 .formBox .row100 .inputBox
 {
     width: 100%;
     
 }
-.inputBox label {
+.contact1 .inputBox label {
   color: #d1864f;
   margin-top: 10px;
   margin-bottom: 5px;
   font-weight: 500;
 }
-.inputBox input
+.contact1 .inputBox input
 {
     padding: 10px;
     font-size: 1.1em;
@@ -1174,7 +1176,7 @@ label:last-child i.fa{color: magenta;}
     border: 1px solid #333;
 
 }
-.inputBox textarea{
+.contact1 .inputBox textarea{
     padding: 10px;
     font-size: 1.1em;
     outline: none;
@@ -1182,7 +1184,7 @@ label:last-child i.fa{color: magenta;}
     min-height: 50%;
     margin-bottom: 10px;
 }
-.inputBox input[type="submit"]
+.contact1 .inputBox input[type="submit"]
 {
     background: #d1864f;
     color: #fff;
@@ -1193,27 +1195,28 @@ label:last-child i.fa{color: magenta;}
     cursor: pointer;
     padding: 14px-15px;
 }
-.inputBox ::placeholder
+.contact1 .inputBox ::placeholder
 {
     color: #999;
 	font-size: 14px;
 	font-family: sans-serif;
 }
 /* info */
-.info{
+
+.contact1 .info{
     background: #0e3959;
 }
-.info h3{
+.contact1 .info h3{
     color: #fff;
 }
-.info .infoBox div 
+.contact1 .info .infoBox div 
 {
     display: flex;
     
     align-items: center;
     margin-bottom: 10px;
 }
-.info .infoBox div span
+.contact1 .info .infoBox div span
 {
     min-width: 40px;
     height: 40px;
@@ -1227,46 +1230,51 @@ label:last-child i.fa{color: magenta;}
     margin-right: 15px;
 
 }
-.info .infoBox div p
+.contact1 .info .infoBox div p
 {
     color: #fff;
     font-size: 1.1em;
 }
-.info .infoBox div a
+.contact1 .info .infoBox div a
 {
     color: #fff;
     font-size: 1.1em;
     text-decoration: none;
 }
-.sci
+.contact1 .sci
 {
     margin-top: 40px;
     display: flex;
 
 }
-.sci li
+.contact1 .sci li
 {
     list-style: none;
     margin-right: 15px;
 }
-.sci li a
+.contact1 .sci li a
 {
     color: #ccc;
     font-size: 2em;
 }
-.sci li a:hover
+.contact1 .sci li a:hover
 {
     color: #fff;
 }
-.map
+.contact1 .map
 {
     padding: 0px;
 
 }
-.map iframe
+.contact1 .map iframe
 {
     width: 100%;
     height: 100%;
+}
+@media (max-width:600px){
+	.contact2{
+		display:flex;
+	}
 }
 @media (max-width:991px){
 
@@ -1282,7 +1290,7 @@ label:last-child i.fa{color: magenta;}
 		background: #d1864f;
         padding:20px;
     }
-    .box{
+    .contact1 .box{
         position: relative;
         display: grid;
         grid-template-columns: 1fr;
@@ -1291,19 +1299,19 @@ label:last-child i.fa{color: magenta;}
                
     }
 
-    .formBox .row50{
+    .contact1 .formBox .row50{
         display: flex;
         gap: 0;
         flex-direction: column;
 		align-items: center;
     }
-	.formBox .row100{
+	.contact1 .formBox .row100{
         display: flex;
         gap: 0;
         flex-direction: column;
 		align-items: center;
     }
-    .inputBox{
+    .contact1 .inputBox{
         display: flex;
         flex-direction: column;
         margin-bottom: 10px;
@@ -1313,7 +1321,7 @@ label:last-child i.fa{color: magenta;}
     .contact1{
         padding:30px;
     }
-    .map{
+    .contact1 .map{
         min-height: 300px;
         padding: 0;
     }
