@@ -261,82 +261,84 @@
 }
 
 /* ----------------------------------- amenities ----------------------------------- */
-
-.amenities{
-	padding: 20px;
+@media only screen and (min-width:300px) and (max-width:600px){
+	.amenities{
+		padding: 20px;
+	}
+	.amenities main{
+		position: relative;
+		height: 120px;
+	}
+	.amenities .para{
+		font-size: 10px;
+		text-align: centers;
+	}
+	.amenities .images img{
+		width: 25px;
+		height: 25px;
+		padding: 3px;
+	}
+	.amenities span{
+		font-size: 6px;
+		width: 40px;
+		height: 20px;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.amenities nav strong label{
+		padding: 5px 2px;
+		border: solid 2px #d1864f;
+	}
+	.amenities .images{
+		padding: 0px;
+	}
+	.amenities main div{
+		padding: 0px;
+	}
+	.amenities main p{
+		font-size: 8px;
+		line-height: 15px;
+	}
+	.amenities main legend{
+		font-size: 15px;
+	}
+	.amenities fieldset{
+		padding: 10px;
+		margin: 0px;
+	}
+	.amenities figure img{
+		width: 25vw;
+		height: 20vh;
+	}
 }
-.amenities main{
-	position: relative;
-	height: 120px;
-}
-.amenities .para{
-	font-size: 10px;
-	text-align: centers;
-}
-.amenities .images img{
-	width: 25px;
-	height: 25px;
-	padding: 3px;
-}
-.amenities span{
-	font-size: 6px;
-	width: 40px;
-	height: 20px;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
-}
-.amenities nav strong label{
-	padding: 5px 2px;
-	border: solid 2px #d1864f;
-}
-.amenities .images{
-	padding: 0px;
-}
-.amenities main div{
-	padding: 0px;
-}
-.amenities main p{
-	font-size: 8px;
-	line-height: 15px;
-}
-.amenities main legend{
-	font-size: 15px;
-}
-.amenities fieldset{
-	padding: 10px;
-	margin: 0px;
-}
-.amenities figure img{
-	width: 25vw;
-	height: 20vh;
-}
-
 /* ----------------------------------- project amenities ----------------------------------- */
-.project-amenities{
-	margin-top: 100px;
-	padding: 20px;
-}
-.project-amenities h1{
-	margin-bottom: 0px;
-}
-.project-amenities .sub-div{
-	padding:8px;
-	text-align: center;
-}
-.project-amenities .sub-div img{
-	width: 25px;
-	height: 25px;
-}
-.project-amenities .img-div{
-	width: 30px;
-	height: 30px;
-}
-.project-amenities .sub-div h5{
-	font-size: 10px;
-	font-weight: 500;
-	padding: 0px 10px;
+@media only screen and (min-width:300px) and (max-width:600px){
+	.project-amenities{
+		margin-top: 100px;
+		padding: 20px;
+	}
+	.project-amenities h1{
+		margin-bottom: 0px;
+	}
+	.project-amenities .sub-div{
+		padding:8px;
+		text-align: center;
+	}
+	.project-amenities .sub-div img{
+		width: 25px;
+		height: 25px;
+	}
+	.project-amenities .img-div{
+		width: 30px;
+		height: 30px;
+	}
+	.project-amenities .sub-div h5{
+		font-size: 10px;
+		font-weight: 500;
+		padding: 0px 10px;
+	}
 }
 /* ----------------------------------- why-signifa ----------------------------------- */
 
