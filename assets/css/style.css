@@ -348,7 +348,7 @@ nav .fa-solid{
 	background: #f3f3f3;
 }
 .about-section .block5 .header {
-	padding: 20px ;
+	/* padding: 20px ; */
 	display: flex;
 	gap: 40px;
 	justify-content: center;
@@ -375,7 +375,7 @@ nav .fa-solid{
 	grid-template-columns: auto auto;
 	justify-content: center;
 	column-gap: 120px;
-	padding: 50px 80px 50px 80px;
+	padding: 0px 80px 0px 80px;
 
 }
 
@@ -779,6 +779,7 @@ label:last-child i.fa{color: magenta;}
  /* ============================ Why Signifa =================================== */
 
  .why-signifa{
+	background: #f3f3f3;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -837,7 +838,13 @@ label:last-child i.fa{color: magenta;}
 	margin-left: 20px;
 	padding: 10px 0px;
 }
-
+.why-signifa li{
+	list-style: none;
+}
+.why-signifa li::before{
+	content: "\00BB";
+	margin-right: 10px;
+}
 /* ================================== Accordion =============================== */
 /* .faqs{
 
@@ -1076,6 +1083,240 @@ label:last-child i.fa{color: magenta;}
 .container .contactForm .fromBox .inputBox input[type="submit"]:hover{
     background: #f0e1d7;
 	color: #d1864f;
+}
+/* ================================contact form for mobile ================================================== */
+
+
+.contactUs{
+	background: linear-gradient(90deg, #0e3953 0%, #0e3953 30%,#03a9f5 30%, #03a9f5 100%);
+    position : relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contactUs .title h2{
+    color: white;
+    font-weight: 500;
+}
+.form
+{
+    grid-area: form;
+}
+.info
+{
+    grid-area: info;
+}
+.map
+{
+    grid-area: map;
+}
+.contact1
+{
+    padding: 40px;
+    background: white;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+}
+.box
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+}
+.contact1 h3
+{
+    color: #d1864f;
+    /* font-weight: 500; */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* Form box */
+.formBox
+{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox
+{
+    width: 100%;
+    
+}
+.inputBox label {
+  color: #d1864f;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.inputBox input
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    min-height: 50%;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]
+{
+    background: #d1864f;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px-15px;
+}
+.inputBox ::placeholder
+{
+    color: #999;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+/* info */
+.info{
+    background: #0e3959;
+}
+.info h3{
+    color: #fff;
+}
+.info .infoBox div 
+{
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infoBox div span
+{
+    min-width: 40px;
+    height: 40px;
+    background: #18b7ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+.info .infoBox div p
+{
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infoBox div a
+{
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.sci
+{
+    margin-top: 40px;
+    display: flex;
+
+}
+.sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a
+{
+    color: #ccc;
+    font-size: 2em;
+}
+.sci li a:hover
+{
+    color: #fff;
+}
+.map
+{
+    padding: 0px;
+
+}
+.map iframe
+{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:991px){
+
+
+	.contact2{
+		padding: 50px 0px;
+	}
+	.contactUs .title h2{
+		
+		font-size: 30px;
+	}
+    .contactUs{
+		background: #d1864f;
+        padding:20px;
+    }
+    .box{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info" "map";
+               
+    }
+
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+		align-items: center;
+    }
+	.formBox .row100{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+		align-items: center;
+    }
+    .inputBox{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+    .contact1{
+        padding:30px;
+    }
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
 }
 
 /* =============================== footer section ============================================= */

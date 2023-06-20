@@ -173,13 +173,15 @@
 
 @media only screen and (min-width:300px) and (max-width:600px){
 	.special-section .main-div{
-		margin: 0px 30px;
+		margin: 0px 10px;
+		gap: 10px;
+		padding: 10px;
 	}
 	.special-section h3{
 		font-size: 8px;
 	}
 	.special-section p{
-		font-size: 5px;
+		font-size: 6px;
 	}
 }
 
@@ -193,16 +195,18 @@
 		align-items: center;
 		padding-top: 30px;
 	}
-
+	.about-section .row1{
+		padding: 25px;
+	}
 	.about-section h1{
 		font-size: 25px;
 		padding-bottom: 0px;
 	}
 	.about-section .row1 p{
-		font-size: 8px;
+		font-size: 10px;
 	}
 	.about-section .row1 h3{
-		font-size: 10px;
+		font-size: 12px;
 	}
 	.about-section .row1 div{
 		width:100px;
@@ -212,6 +216,7 @@
 		display: none;
 	}
 	.about-section .block4{
+		background: #fff;
 		padding: 20px 0px;
 	}
 	.about-section .block4 .heading, .block5 .heading{
@@ -219,6 +224,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		padding-top:20px;
 
 	}
 	.about-section .block4 h3, .block5 .header h3{
@@ -232,18 +238,19 @@
 		font-size: 20px;
 	} 
 	.about-section .feutures{
-		column-gap: 0px;
+		column-gap: 30px;
 		padding: 0px;
-		margin-left: 70px;
+		margin-left: 0px;
 	}
 	.about-section .block5 .feutures .element {
 		font-size: 10px;
 		align-items: center;
 		margin-bottom: 5px;
+		width: auto;
 	}
 	.about-section .block5 .feutures img{
-		width: 15px;
-		height: 12.5px;
+		width: 25px;
+		height: 22.5px;
 		margin: 0px;
 	}
 	.about-section .block4 .button a{
@@ -279,7 +286,7 @@
 		padding: 3px;
 	}
 	.amenities span{
-		font-size: 6px;
+		font-size: 8px;
 		width: 40px;
 		height: 20px;
 		display: flex;
@@ -289,10 +296,11 @@
 	}
 	.amenities nav strong label{
 		padding: 5px 2px;
-		border: solid 2px #d1864f;
+		border: solid 1px #d1864f;
 	}
 	.amenities .images{
-		padding: 0px;
+		padding: 5px;
+		gap: 20px;
 	}
 	.amenities main div{
 		padding: 0px;
@@ -340,6 +348,14 @@
 		padding: 0px 10px;
 	}
 }
+
+/* ----------------------------------- specifications  ----------------------------------- */
+@media only screen and (min-width:300px) and (max-width:600px){
+	.specifications, .specifications-div{
+		display: none;
+	}
+}
+
 /* ----------------------------------- why-signifa ----------------------------------- */
 
 @media only screen and (min-width:600px) and (max-width:900px){
@@ -360,7 +376,45 @@
         column-gap: 20px;
     }
 }
-
+@media only screen and (min-width:300px) and (max-width:600px){
+	.why-signifa{
+		padding: 0px;
+		padding-top: 20px;
+	}
+	.why-signifa h3{
+		font-size: 15px;
+	}
+	.why-signifa .para{
+		padding: 20px;
+		text-align: center;
+		width: auto;
+		font-size: 12px;
+	}
+	.why-signifa .cards{
+		padding: 20px 75px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: 20px;
+		column-gap: 0px;
+		align-items: start;
+		/* background: gray; */
+	}
+	.why-signifa li{
+		list-style: none;
+		font-size: 12px;
+	}
+	.why-signifa .card{
+		width: auto;
+	}
+	.why-signifa .icon img{
+		padding: 5px;
+		margin: 0px;
+	}
+	.why-signifa .card-content .list{
+		margin: 0px;
+	}
+}
 /* ----------------------------------- contact form ----------------------------------- */
 /*now, make it reponsive*/
 @media (max-width:1200px){
@@ -414,6 +468,9 @@
     }
 }
 @media (max-width:600px){
+	.contact-form{
+		display: none;
+	}
     .container .contactForm{
         padding: 25px;
     }
@@ -432,6 +489,7 @@
 @media (max-width:700px){
     footer{
         bottom:unset;
+		border-top-left-radius: 80px;
     }
     footer .col{
         flex-basis: 100%;
@@ -444,6 +502,3 @@
 
 /* ----------------------------------- footer ----------------------------------- */
 
-@media only screen and(max-width:600px){
-	
-}
