@@ -52,8 +52,8 @@
 		margin-left: 90px;
 	}
 	.nav-container ul a{
-		
-		font-size: 10px;
+		color: #fff;
+		font-size: 12px;
 		font-weight: 550;
 	}
 	.nav-container ul li{
@@ -134,7 +134,7 @@
 		align-items: end;
 	}
 	nav ul{
-		background: blueviolet;
+		background: #d1864f;
 		position:fixed;
 		top: 0;
 		right: -200px;
@@ -151,25 +151,193 @@
 	}
 	nav ul li{
 		
-		padding: 25px 25px 25px 35px;
+		padding: 15px 25px 15px 35px;
 		/* margin-top: 10px; */
 	}
 	nav ul .fa-solid{
 		position: absolute;
 		top: 20px;
-		right: 25px;
+		right: 50px;
 		cursor: pointer;
 
 	}
 	nav ul li a{
-		color: aqua;
-		font-size: 15px;
+		color: #875c2b;
+		font-size: 25px;
 	}
 
 }
 /* ========================== responsive for stick nav and tool bar end============================ */
 
+/* ----------------------------------- Special section ----------------------------------- */
 
+@media only screen and (min-width:300px) and (max-width:600px){
+	.special-section .main-div{
+		margin: 0px 30px;
+	}
+	.special-section h3{
+		font-size: 8px;
+	}
+	.special-section p{
+		font-size: 5px;
+	}
+}
+
+
+/* ----------------------------------- About section ----------------------------------- */
+@media only screen and (min-width:300px) and (max-width:600px){
+	.about-section{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px;
+	}
+
+	.about-section h1{
+		font-size: 25px;
+		padding-bottom: 0px;
+	}
+	.about-section .row1 p{
+		font-size: 8px;
+	}
+	.about-section .row1 h3{
+		font-size: 10px;
+	}
+	.about-section .row1 div{
+		width:100px;
+		height: 100px;
+	}
+	.about-section .block2{
+		display: none;
+	}
+	.about-section .block4{
+		padding: 20px 0px;
+	}
+	.about-section .block4 .heading, .block5 .heading{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+	}
+	.about-section .block4 h3, .block5 .header h3{
+		font-size: 20px;
+	} 
+	.about-section .block4 .para{
+		padding: 20px 40px;
+		text-align: center;
+	}
+	.about-section .block5 .header h3{
+		font-size: 20px;
+	} 
+	.about-section .feutures{
+		column-gap: 0px;
+		padding: 0px;
+		margin-left: 70px;
+	}
+	.about-section .block5 .feutures .element {
+		font-size: 10px;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+	.about-section .block5 .feutures img{
+		width: 15px;
+		height: 12.5px;
+		margin: 0px;
+	}
+	.about-section .block4 .button a{
+		font-size: 12px;
+		font-weight: 600;
+		padding: 10px 25px;
+		
+	}
+	.about-section .block5 button a{
+		font-size: 12px;
+		font-weight: 600;
+		padding: 10px 25px;
+
+	}
+}
+
+/* ----------------------------------- amenities ----------------------------------- */
+
+.amenities{
+	padding: 20px;
+}
+.amenities main{
+	position: relative;
+	height: 120px;
+}
+.amenities .para{
+	font-size: 10px;
+	text-align: centers;
+}
+.amenities .images img{
+	width: 25px;
+	height: 25px;
+	padding: 3px;
+}
+.amenities span{
+	font-size: 6px;
+	width: 40px;
+	height: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.amenities nav strong label{
+	padding: 5px 2px;
+	border: solid 2px #d1864f;
+}
+.amenities .images{
+	padding: 0px;
+}
+.amenities main div{
+	padding: 0px;
+}
+.amenities main p{
+	font-size: 8px;
+	line-height: 15px;
+}
+.amenities main legend{
+	font-size: 15px;
+}
+.amenities fieldset{
+	padding: 10px;
+	margin: 0px;
+}
+.amenities figure img{
+	width: 25vw;
+	height: 20vh;
+}
+
+/* ----------------------------------- project amenities ----------------------------------- */
+.project-amenities{
+	margin-top: 100px;
+	padding: 20px;
+}
+.project-amenities h1{
+	margin-bottom: 0px;
+}
+.project-amenities .sub-div{
+	padding:8px;
+	text-align: center;
+}
+.project-amenities .sub-div img{
+	width: 25px;
+	height: 25px;
+}
+.project-amenities .img-div{
+	width: 30px;
+	height: 30px;
+}
+.project-amenities .sub-div h5{
+	font-size: 10px;
+	font-weight: 500;
+	padding: 0px 10px;
+}
 /* ----------------------------------- why-signifa ----------------------------------- */
 
 @media only screen and (min-width:600px) and (max-width:900px){
@@ -270,4 +438,10 @@
     footer .col:nth-child(2),.col:nth-child(3){
         flex-basis: 100%;
     }
+}
+
+/* ----------------------------------- footer ----------------------------------- */
+
+@media only screen and(max-width:600px){
+	
 }
