@@ -642,22 +642,26 @@ label:last-child i.fa{color: magenta;}
     overflow: hidden;
     /* box-shadow: 0 0 15px 0 #031006; */
 }
-.specifications .tabs .tab-content img{
-	margin-top: 30px;
-	width: 120px;
-	height:150px;
-}
+/* .specifications .tabs .tab-content img{
+	
+    width: auto;
+	height:auto;
+} */
 .specifications .tabs .tab-content {
 	position: relative;
 	height: 100%;
 	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .tab-content > div{
  
     position: absolute;
     text-align: center;
     /* height: 100vh; */
-    padding: 30px 20px;
+    /* padding: 30px 20px; */
     background:transparent;
     top: -200%;
     transition: all 500ms ease-in-out;
@@ -721,7 +725,7 @@ label:last-child i.fa{color: magenta;}
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(180deg,#f6f2eb 10%, #f0e1d7 50%,#d1864f 90%);
+	
 }
 /* .tab-indicator{
     position: absolute;
@@ -769,9 +773,9 @@ label:last-child i.fa{color: magenta;}
 	padding: 40px;
 	font-size: 12px;
 }
-.tab-content img{
+/* .tab-content img{
 	margin-top: 50px;
-}
+} */
 .content section{
 	display: flex;
 	justify-content: center;
@@ -1463,12 +1467,154 @@ footer .underline span{
 
 
 
+/* -------------------------call us -------------------------------*/
+.sidebar-from2{
+    display: flex;
+    position: fixed;
+    top: 50%;
+    right: -8px;
+    /* width: 350px; */
+    box-shadow: 0 0 5px rgba(0, 0, 0,0.3);
+    background-color: #fff;
+    transform: translateY(-50%);
+    transition: right .4s linear;
+    z-index: 2147483647;
+}
+.sidebar-from2.show{
+    right: 0;
+}
+.call{
+    transform:translateY(-50%) ;
+    position: relative;
+    right: 10;
+    padding: 200px 30px 200px 30px;
+    height: 40;
+    color: #fff;
+ 
+  
+}
+.sidebar-from2 .call-action2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #d1864f;
+    font-weight: 650;font-family: sans-serif;
+    letter-spacing: 1px;   
+    text-align: center;
+    line-height: 40px;
+    left: -50px;
+    top: 50%;
+    transform:translateY(-50%);
+ }
+ .call-action2 button{
+    outline: none;
+    border: none;
+    background-color: #d1864f;
+ }
+ .call-action2 i{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10PX;
+ }
+
+ @media only screen and (max-width:600px){
+    .sidebar-from2 .call-action2{
+        display: none;
+    }
+
+ }
+/* -------------------------call us -------------------------------*/
 
 
+/* pop up css */
+.wrapper{
 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 12;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
 
+    
+}
+.wrapper form{
+    
+    background-color:#202533;
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    padding: 42px 24px 2px 24px;
+    animation: shake 0,.2s cubic-bezier(.5, .05, 1, .5);
+    animation: alternate;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+    transform: translate3d(0, -50px, 0);
+    position: absolute;
+    top: 160px;
+}
+@keyframes shake{
+    from{
+        transform: translate3d(0,-50px,0);
+    }
+    to{
+        transform: translate3d(0,0,0); 
+    }
+}
+.wrapper form label{
+    font-weight: 900;
+    font-size: 14px;
+    margin-bottom: 5px;
 
+}
+.wrapper form .close{
+    margin-left: auto !important;
+    margin: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: -22px;
+}
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+.wrapper form input{
+    margin-bottom: 10px;
+    padding: 5px;
+    /* height: 30px; */
+    border: none;
+}
+.wrapper form button{
+    width: 100px;
+    height: 40px;
+    margin: 30px auto;
+    padding: 10 40 !important;
+    border: none;
+    font-size: 16px;
+    background-color: #31386e;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
 
+/* pop up end */  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 
 
 

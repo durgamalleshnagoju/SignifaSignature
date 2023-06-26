@@ -83,7 +83,7 @@
                         <li><a href="#">AMENITIES</a></li>
                         <li><a href="#">SPECIFICATIONS</a></li>
                         <li><a href="#">LOCATION</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                         <i class="fa-solid fa-xmark" style="color: #fff;" onclick="closemenu()"></i>
                     </ul>
                 </nav>
@@ -94,7 +94,7 @@
                 
             <div class="button-section">
                 <div class="button">
-                    <a style="text-decoration:none" href="#">Download Brochure</a>
+                    <a style="text-decoration:none" href="#" onclick="openForm()">Download Brochure</a>
                 </div>
             </div>
         </section>
@@ -103,7 +103,7 @@
     
     <!-- --------------------------------------------------   banner  ---------------------------------------------------------------- -->
     <div class="banner">
-        <img src="./assets/imges/main banner.jpg" alt="main_banner">
+        <img src="./assets/imges/Banner.jpg" alt="main_banner">
     </div>
     <!-- ---------------------- special section -------------------------------- -->
     <section class="special-section">
@@ -314,7 +314,7 @@
             </div>
             <div class="button">
                 <div>
-                    <button><a href="#">Download Brochure</a></button>
+                    <button><a href="#" onclick="openForm()">Download Brochure</a></button>
                 </div>
             </div>
             
@@ -553,23 +553,13 @@
                     <div class="both">
                         <div class="tab-content">
                             <div class="content active">
-                                <img src="./assets/imges/signature about1.jpg" alt="specifications">
-                                <section>
-                                    <h3>STRUCTURE</h3>
-                                </section>
-                                
-                                <p>Main Door Teak wood frame with moulded panel shutter and for internal doors sal wood frame with moulded panel shutters.</p>
+                                <img src="./assets/imges/specifications/Stucture.jpg" alt="specifications">
                             </div>
                             <div class="content">
-                                <img src="./assets/imges/signature about1.jpg" alt="specifications">
-                                <section>
-                                    <h3>STRUCTURE</h3>
-                                </section>
-                                
-                                <p>Main Door Teak wood frame with moulded panel shutter and for internal doors sal wood frame with moulded panel shutters.</p>
+                                <img src="./assets/imges/specifications/Stucture.jpg" alt="specifications">
                             </div>
                             <div class="content">
-                                <img src="./assets/imges/signature about1.jpg" alt="specifications">
+                                <img src="./assets/imges/specifications/walls.jpgs" alt="specifications">
                                 <section>
                                     <h3>WALLS</h3>
                                 </section>
@@ -951,7 +941,7 @@
 
 <!-- --------------------------------Contact Form -------------------------------- -->
 
-<section class="contact-form">
+<section class="contact-form" id="contact">
     <div class="container">
         <div class="contactInfo">
             <div>
@@ -1151,6 +1141,49 @@
     <p class="copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quaerat!</p>
 </footer>
 
+<!-- ------------call us start--------------- -->
+
+<div class="sidebar-from2">
+    <div class="call-action2">
+        <a href="tel:+910000000000"><button  onclick="myFunction()"><i class="fa-solid fa-phone" style="color: #ffffff;"></i></button></a>
+        <a href="https://api.whatsapp.com/send?phone= 0000000000&text=Hello%20Let%27s%20talks." target="_blank"><button   onclick="myFunction()"><i class="fa-brands fa-whatsapp" style="color: #ffffff; font-size: 25px;"></i>    </button></a>
+        <a href="#"><button class="pop_btn" onclick="openForm()"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></button></a> 
+        <a href="#contact"><button  onclick="myFunction()"><i class="fa-solid fa-file-lines" style="color: #ffffff;"></i></button></a>
+    </div>
+</div>
+
+<!-- ------------call us end--------------- -->
+
+<!-- ----------popup form start--------------- -->
+<div class="wrapper">
+    <form action="mail.php"  method="POST" autocomplete="off">
+        <i class="fa-solid fa-circle-xmark close" onclick="closeForm()"></i>
+        <h2>Get In Touch</h2>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+  
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+  
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="Phone">
+  
+        <label for="sub">Subject</label>
+        <input type="text" name="sub" id="Subject" required>
+  
+        <label for="message">Message</label>
+        <textarea name="message" id="" cols="30" rows="2"></textarea>
+  
+  
+        <button type="submit" value="Submit">Submit</button>
+        
+  
+      </form>
+    
+ </div>
+
+<!-- ----------popup form end--------------- -->
+
 <!-- js for icons -->
 <script>
     var sidemeu = document.getElementById("sidemenu");
@@ -1175,6 +1208,16 @@
         header.classList.remove("sticky");
       }
     }
+</script>
+
+<script>
+    // When the user clicks on <div>, open the popup
+        function openForm() {
+			document.querySelector('.wrapper').style.display = 'flex';
+		}
+        function closeForm() {
+			document.querySelector('.wrapper').style.display = 'none';
+		}
 </script>
 
 </body>
